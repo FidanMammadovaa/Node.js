@@ -26,15 +26,7 @@ app.post('/upload', upload.array('myfiles[]'), (req, res) => {
     const files = req.files
 
     console.log(files);
-    // files.forEach((file) => {
-    //     if (file) {
-    //         res.send('File uploaded')
-    //     }
-    //     else
-    //     {
-    //         res.send("Error")
-    //     }
-    // })
+ 
 });
 
 app.get('/', (req, res) => {
